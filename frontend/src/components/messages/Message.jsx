@@ -14,7 +14,7 @@ const Message = ({ message }) => {
   const profilePic = fromMe
     ? authUser.profilePic
     : selectedConversation?.profilePic;
-  const bubbleBgColor = fromMe ? "bg-blue-500" : "";
+  const bubbleBgColor = fromMe ? "bg-blue-800" : "bg-gray-800";
   const doubleTick = fromMe ? true : false;
 
   const shakeClass = message.shouldShake ? "shake" : "";
@@ -56,12 +56,12 @@ const Message = ({ message }) => {
               <Skeleton w="200px" h="200px" />
             </Flex>
           )}
-          <div className="chat-footer opacity-50 text-xs flex gap-1 items-center">
+          <div className="chat-footer opacity-50 text-xs flex gap-2 items-center text-white font-semibold">
             {formattedTime}
             {doubleTick && (
               <RiCheckDoubleFill
                 size={20}
-                className={` ${message.seen ? "text-blue-400" : "text-white"}`}
+                className={` ${message.seen ? "text-blue-800" : "text-white"}`}
               />
             )}
           </div>
