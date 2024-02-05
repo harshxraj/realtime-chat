@@ -15,19 +15,19 @@ const Login = () => {
 
   return (
     <div className="flex flex-col items-center justify-center min-w-96 mx-auto">
-      <div className="w-full p-6 rounded-lg shadow-md bg-gray-900">
-        <h1 className="text-3xl font-semibold text-center text-blue-400">
-          Chat App
+      <div className="w-full p-6 rounded-lg shadow-md overflow-hidden bg-gray-400 bg-clip-padding backdrop-filter backdrop-blur-lg bg-opacity-30">
+        <h1 className="text-3xl font-semibold text-center text-black">
+          Otaku Talks!
         </h1>
         <h2 className="text-slate-200 text-2xl font-semibold text-center mt-1">
           {" "}
           Log in
         </h2>
 
-        <form onSubmit={handleSubmit}>
+        <form onSubmit={handleSubmit} className="pb-2">
           <div>
-            <label className="label p-2">
-              <span className="text-base label-text">Username</span>
+            <label className="label">
+              <span className="text-base label-text text-black">Username</span>
             </label>
             <input
               type="text"
@@ -40,7 +40,7 @@ const Login = () => {
 
           <div>
             <label className="label">
-              <span className="text-base label-text">Password</span>
+              <span className="text-base label-text text-black">Password</span>
             </label>
             <input
               type="password"
@@ -52,7 +52,7 @@ const Login = () => {
           </div>
           <Link
             to="/signup"
-            className="text-sm  hover:underline hover:text-blue-600 mt-2 inline-block"
+            className="text-sm  text-white hover:underline hover:text-blue-600 mt-2 inline-block"
           >
             {"Don't"} have an account?
           </Link>
