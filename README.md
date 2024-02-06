@@ -8,6 +8,7 @@
 - **Secure Authentication**: Users can securely sign up and log in to the application.
 - **Real-Time Messaging**: Users can chat with each other in real time.
 - **Text and Image Sending**: Users can send both text messages and images.
+- **Real-Time Online Status**: Users can see the real-time online status of other users.
 - **Message Seen Feature**: Users can see when their messages have been seen by others.
 - **User Search**: Users can search for other users and start a chat with them.
 
