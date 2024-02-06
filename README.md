@@ -2,6 +2,7 @@
 <p>This is a real-time chat application built using the MERN stack (MongoDB, Express.js, React.js, Node.js) with Socket.IO for real-time messaging feature. 
    It also utilizes Tailwind CSS and Daisy UI for styling.</p>
 
+[Live Link](https://chatapp-zdyr.onrender.com/) (On first load, Render takes a little longer to load the app)
 ## Features
 
 - **Secure Authentication**: Users can securely sign up and log in to the application.
