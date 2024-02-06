@@ -4,6 +4,8 @@ import useConversation from "../../zustand/useConversation";
 import { RiCheckDoubleFill } from "react-icons/ri";
 import { Image, Modal, Flex, Skeleton } from "@chakra-ui/react";
 import { useState } from "react";
+import { GoTrash } from "react-icons/go";
+import { FaTrash } from "react-icons/fa";
 
 const Message = ({ message }) => {
   const { authUser } = useAuthContext();
@@ -33,6 +35,7 @@ const Message = ({ message }) => {
           {message.message && (
             <div
               className={`chat-bubble text-white ${bubbleBgColor} ${shakeClass} pb-2`}
+              style={{ maxWidth: "230px", wordWrap: "break-word" }}
             >
               {message.message}
             </div>
@@ -57,6 +60,8 @@ const Message = ({ message }) => {
             </Flex>
           )}
           <div className="chat-footer opacity-50 text-xs flex gap-2 items-center text-white font-semibold">
+            {/* <FaTrash className="text-red-600 hover:cursor-pointer" /> */}
+
             {formattedTime}
             {doubleTick && (
               <RiCheckDoubleFill
@@ -76,6 +81,7 @@ const Message = ({ message }) => {
           {message.message && (
             <div
               className={`chat-bubble text-white ${bubbleBgColor} ${shakeClass} pb-2`}
+              style={{ maxWidth: "230px", wordWrap: "break-word" }}
             >
               {message.message}
             </div>
@@ -101,7 +107,7 @@ const Message = ({ message }) => {
               <Skeleton w="200px" h="200px" />
             </Flex>
           )}
-          <div className="chat-footer opacity-50 text-xs flex gap-1 items-center">
+          <div className="chat-footer opacity-50 text-xs flex gap-1 items-center text-white font-semibold">
             {formattedTime}
             {doubleTick && (
               <RiCheckDoubleFill

@@ -45,6 +45,14 @@ const MessageInput = () => {
             placeholder="Send a message"
             value={message}
             onChange={(e) => setMessage(e.target.value)}
+            style={{
+              wordWrap: "break-word",
+              overflowWrap: "break-word",
+              width: "80%",
+              minHeight: "40px",
+              height: "auto",
+              resize: "auto",
+            }}
           />
           <button className="absolute inset-y-0 end-0 flex items-center pe-11">
             <BsFillImageFill
