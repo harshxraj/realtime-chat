@@ -30,9 +30,7 @@ const Conversation = ({ conversation, lastIdx, emoji }) => {
             <p className="text-md text-gray-200 font-semibold">
               {conversation.fullName}
             </p>
-            {/* <span className="indicator-item badge badge-secondary text-white bg-black rounded-md border-0">
-              typing…
-            </span> */}
+            {/* <span className="indicator-item badge badge-secondary text-white bg-black rounded-md border-0 loading loading-dots loading-md"></span> */}
           </div>
         </div>
       </div>
