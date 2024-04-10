@@ -3,6 +3,9 @@
    It also utilizes Tailwind CSS and Daisy UI for styling.</p>
 
 [Live Link](https://chatapp-zdyr.onrender.com/) 
+
+![Screenshot 2024-03-17 200511](https://github.com/harshxraj/realtime-chat/assets/128404446/291dcf65-ca71-4bab-88fa-7f689e641c9d)
+
 ## Features
 
 - **Secure Authentication**: Users can securely sign up and log in to the application.
@@ -20,3 +23,5 @@
 - **Socket.IO**: Library for real-time web applications, used for enabling real-time messaging.
 - **Tailwind CSS**: Utility-first CSS framework used for styling.
 - **Daisy UI**: UI components library for Tailwind CSS, used for additional styling.
+  
+
