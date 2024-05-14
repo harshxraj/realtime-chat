@@ -1,9 +1,9 @@
 import cron from "cron";
 import https from "https";
 
-const URL = "https://chatapp-zdyr.onrender.com";
+const URL = "https://chatapp-zdyr.onrender.com/";
 
-const job = new cron.CronJob("*/14 * * * *", function () {
+const job = new cron.CronJob("*/14 9-22 * * *", function () {
   https
     .get(URL, (res) => {
       if (res.statusCode === 200) {
@@ -15,6 +15,7 @@ const job = new cron.CronJob("*/14 * * * *", function () {
     .on("error", (e) => {
       console.error("Error while sending request", e);
     });
-});
+}, null, true, 'Asia/Kolkata');
+
 
 export default job;
