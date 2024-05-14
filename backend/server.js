@@ -12,7 +12,7 @@ import userRoutes from "./routes/user.routes.js";
 import connectToMongoDB from "./db/connectToMongoDB.js";
 import { app, server } from "./socket/socket.js";
 
-// import job from "./cron.js";
+import job from "./cron.js";
 
 const PORT = process.env.PORT || 5000;
 
@@ -21,7 +21,7 @@ app.use(bodyParser.json({ limit: "50mb" }));
 app.use(bodyParser.urlencoded({ limit: "50mb", extended: true }));
 
 dotenv.config();
-// job.start();
+job.start();
 
 cloudinary.config({
   cloud_name: process.env.CLOUDINARY_CLOUD_NAME,
